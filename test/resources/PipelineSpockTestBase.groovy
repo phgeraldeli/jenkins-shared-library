@@ -1,0 +1,28 @@
+package test.resources
+
+import com.lesfurets.jenkins.unit.RegressionTest
+import spock.lang.Specification
+
+/**
+ * A base class for Spock testing using the pipeline helper
+ */
+class PipelineSpockTestBase extends Specification  implements RegressionTest {
+
+    /**
+     * Delegate to the test helper
+     */
+    @Delegate PipelineTestHelper pipelineTestHelper
+
+    /**
+     * Do the common setup
+     */
+    def setup() {
+
+        // Set callstacks path for RegressionTest
+        callStackPath = 'test/resources/callstacks/'
+
+        // Create and config the helper
+        pipelineTestHelper = new PipelineTestHelper()
+        pipelineTestHelper.setUp()
+    }
+}

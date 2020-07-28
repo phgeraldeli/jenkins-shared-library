@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+package vars;
 
 def call(body) {
     def config = [:]
