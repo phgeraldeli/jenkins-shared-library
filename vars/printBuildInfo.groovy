@@ -7,7 +7,7 @@ def call(body) {
     body()
 
     echo config.name
-    echo "Param1 is: ${env.param1}"
+    echo "Param1 is: ${env.foo}"
     echo "Param2 is: ${env.param2}"
     if (env.param1 == 'One default') {
         echo "Param1 is default"
