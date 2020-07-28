@@ -31,7 +31,7 @@ sourceSets {
 
     test {
         groovy {
-            srcDirs= ['pipelineTests/groovy']
+            srcDirs= ['test']
         }
     }
 }
