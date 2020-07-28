@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 .gradle
+local-storage.json
 
 # Log file
 *.log
